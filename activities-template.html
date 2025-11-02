@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Activities - Team EarthUtsav</title>
+    <link rel="stylesheet" href="activities-template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="assets/Logo.jpg" alt="Team EarthUtsav Logo" class="logo">
+                <span class="brand-name">Team EarthUtsav</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="#activities" class="active">Activities</a></li>
+                <li><a href="index.html#community">Community</a></li>
+                <li><a href="index.html#pledge">Take Pledge</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Our Activities</h1>
+            <p class="hero-subtitle">Transforming Waste into Wonder</p>
+            <p class="hero-description">
+                Discover our comprehensive range of eco-friendly initiatives that combine creativity, sustainability, and community impact to create a greener future.
+            </p>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="m0,49.98c150,0 271.49,-59.98 500,-49.98s349.21,108.08 700,49.98v120.1h-1200z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <h2 class="filter-title">Filter by Category</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Activities</button>
+                <button class="filter-btn" data-category="Textile Upcycling">Textile Upcycling</button>
+                <button class="filter-btn" data-category="Waste Management">Waste Management</button>
+                <button class="filter-btn" data-category="Creative Upcycling">Creative Upcycling</button>
+                <button class="filter-btn" data-category="Social Impact">Social Impact</button>
+                <button class="filter-btn" data-category="Environmental Action">Environmental Action</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Grid -->
+    <section class="activities-section">
+        <div class="container">
+            <div id="activities-grid" class="activities-grid">
+                <!-- Activities will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Animation -->
+    <div id="loading" class="loading-container">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <div class="spinner-ring"></div>
+            <p>Loading Activities...</p>
+        </div>
+    </div>
+
+    <!-- Activity Modal -->
+    <div id="activity-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Our Impact in Numbers</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Items Upcycled</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-target="1200">0</div>
+                    <div class="stat-label">People Reached</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="stat-number" data-target="75">0</div>
+                    <div class="stat-label">Workshops Conducted</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="stat-number" data-target="300">0</div>
+                    <div class="stat-label">Lives Impacted</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Make a Difference?</h2>
+                <p>Join us in our mission to create sustainable celebrations and protect our environment. Every small action counts towards a greener future.</p>
+                <a href="index.html#pledge" class="cta-btn">Take the Pledge</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Together, we celebrate responsibly and build a greener future for one and all.</p>
+            <p class="footer-copyright">
+                &copy; 2025 Team EarthUtsav - Youth Power, AISG46
+            </p>
+        </div>
+    </footer>
+
+    <script src="activities-template.js"></script>
+</body>
+</html>
